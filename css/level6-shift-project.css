@@ -1,0 +1,129 @@
+@charset "utf-8";
+body {
+    background-color: #EEE;
+}
+.header {
+    padding-left: 10px;
+    border-bottom: 1px solid #333;
+}
+.header h1 {
+    font-size: 30px;
+}
+.header h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.main {
+    padding: 0 10px;
+}
+.intro {
+    padding-top: 10px;
+    margin-bottom: 25px;
+}
+.intro p {
+    margin-bottom: 15px;
+}
+
+.data {
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    /*height: 63px;*/
+}
+
+
+.item {
+    height: 30px;
+    -webkit-box-sizing: border-box;
+    display: -webkit-flex;
+    -webkit-flex-flow: row nowrap;
+    -webkit-justify-content: space-around;
+    -webkit-align-items: center;
+    border: 1px solid #999;
+    border-top: none;
+}
+.item:first-child {
+    border: 1px solid #999;
+}
+
+.item > div {
+    height: 100%;
+}
+.item-index {
+    width: 10px;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    border-right: 1px solid #999;
+}
+.item-index-block {
+    width: 4px;
+    height: 80%;
+    border-radius: 1px;
+    background-color: skyblue;
+}
+.item-num {
+    width: 35px;
+    -webkit-box-sizing: border-box;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    border-right: 1px solid #999;
+}
+
+.item-id {
+    text-transform: uppercase;
+    width: 85px;
+    -webkit-box-sizing: border-box;
+    padding: 2px;
+    word-wrap: break-word;
+    line-height: 1.1;
+    border-right: 1px solid #999;
+}
+
+.item-graph {
+    -webkit-flex-grow: 1;
+    border-right: 1px solid #999;
+    display: -webkit-flex;
+    -webkit-flex-flow: column nowrap;
+    -webkit-justify-content: space-around;
+}
+.item-graph > div {
+    height: 5px;
+}
+
+.item-graph-int {
+    width: 80%;
+    background-color: #579393;
+    background-image: -webkit-linear-gradient(360deg, #3C8540, #FBE9CC);
+}
+.item-graph-dex {
+    width: 70%;
+    background-color: #6373A6;
+    background-image: -webkit-linear-gradient(360deg, #336699, #CEDFF4);
+}
+.item-graph-vit {
+    width: 40%;
+    background-color: #854963;
+    background-image: -webkit-linear-gradient(360deg, #64363C, #F596AA);
+}
+
+.item-time {
+    width: 65px;
+    text-transform: uppercase;
+    -webkit-box-sizing: border-box;
+    padding: 2px;
+    word-wrap: break-word;
+    line-height: 1.1;
+}
+
+@media all and (max-width: 950px) {
+    .data {
+        -webkit-column-count: 2;
+    }
+}
+@media all and (max-width: 600px) {
+    .data {
+        -webkit-column-count: 1;
+    }
+}
