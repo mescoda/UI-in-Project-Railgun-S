@@ -1,5 +1,4 @@
 
-
 var itemIndexBlockColors = ['#5499C2', '#494949', '#A24C55'],
     mainPadding = 10,
     itemHeight = 30,
@@ -85,7 +84,7 @@ window.onload = window.onresize = function() {
     elemData.style.height = dataHeight;
 
     elemData.innerHTML = '';
-    appendItems(1, totalNum);
+    appendItems(3630, totalNum);
 
     for (var i = 0; i < columnCount; i++) {
         topNums.push(numPerColumn * i + 1);
