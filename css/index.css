@@ -1,0 +1,79 @@
+@charset "utf-8";
+html, body {
+    height: 100%;
+}
+.wrapper {
+    display: -webkit-flex;
+    -webkit-flex-flow: row nowrap;
+    height: 100%;
+}
+.header {
+    -webkit-order: 2;
+    width: 50%;
+    background-color: #F8F8F8;
+    color: #FF000F;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+.logo {
+    text-align: right;
+    font-size: 60px;
+    -webkit-writing-mode: vertical-rl;
+    -webkit-text-orientation: upright;
+}
+.logo-l {
+    margin-bottom: calc(1em + 20px);
+}
+.logo-b {
+    background-color: #FF000F;
+    color: #F8F8F8;
+    line-height: 1;
+    display: inline-block;
+}
+.logo-c {
+    height: 1em;
+    width: 1em;
+}
+.logo-s {
+    position: relative;
+    font-size: 120%;
+    line-height: 1.1;
+    width: 59px;
+    height: 58px;
+    top: -3px;
+    left: 40px;
+}
+.main {
+    -webkit-order: 1;
+    width: 50%;
+    background-color: #CD5020;
+    color: #FED8D7;
+}
+.main h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 40px 0 50px;
+}
+.vertical {
+    -webkit-writing-mode: vertical-rl;
+    -webkit-text-orientation: upright;
+}
+.list {
+    font-size: 20px;
+    color: #FFF;
+    padding: 0 30px;
+    counter-reset: list;
+    counter-increment: list;
+}
+.list li:before {
+    content: '#'counter(list);
+}
+.list a {
+    color: #FED8D7;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+.list a:hover {
+    border-bottom: 1px solid;
+}
