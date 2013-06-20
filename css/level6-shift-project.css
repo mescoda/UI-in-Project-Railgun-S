@@ -28,7 +28,7 @@ body {
 .data {
     -webkit-column-count: 3;
     -webkit-column-gap: 20px;
-    /*height: 63px;*/
+    margin-bottom: 30px;
 }
 
 
@@ -41,9 +41,6 @@ body {
     -webkit-align-items: center;
     border: 1px solid #999;
     border-top: none;
-}
-.item:first-child {
-    border: 1px solid #999;
 }
 
 .item > div {
@@ -63,7 +60,7 @@ body {
     background-color: skyblue;
 }
 .item-num {
-    width: 35px;
+    width: 38px;
     -webkit-box-sizing: border-box;
     display: -webkit-flex;
     -webkit-justify-content: center;
@@ -79,6 +76,7 @@ body {
     word-wrap: break-word;
     line-height: 1.1;
     border-right: 1px solid #999;
+    overflow: hidden;
 }
 
 .item-graph {
@@ -108,7 +106,7 @@ body {
     background-image: -webkit-linear-gradient(360deg, #64363C, #F596AA);
 }
 
-.item-time {
+.item-result {
     width: 65px;
     text-transform: uppercase;
     -webkit-box-sizing: border-box;
